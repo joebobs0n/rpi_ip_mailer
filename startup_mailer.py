@@ -9,6 +9,7 @@ throwaway_email = 'your_email@gmail.com'
 email_password = 'your password'
 
 
+# function to check if internet connection is available
 def have_internet():
     conn = httplib.HTTPConnection("www.google.com", timeout=5)
     try:
@@ -20,6 +21,7 @@ def have_internet():
         return False
 
 
+# do not continue until internet is available
 while not have_internet():
     pass
 
