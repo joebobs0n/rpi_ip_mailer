@@ -14,6 +14,6 @@ This script emails your Raspberry Pi's local IP address to a given gmail address
 * Open a terminal and navigate to where the script is located
 * Type: "sudo chmod +x startup_mailer.py"
 * Type: "sudo nano /etc/rc.local"
-* Add "python3 home/pi/<Optional Folder>/startup_mailer.py" before the "exit 0" at the bottom of the file
+* Add "python3 home/pi/\<Optional Folder\>/startup_mailer.py" before the "exit 0" at the bottom of the file
 * Save and close ("ctrl+x", "y", "enter")
 * Reboot ("sudo shutdown -r now" or "sudo reboot") and verify that you receive an email with the Pi's IP address
